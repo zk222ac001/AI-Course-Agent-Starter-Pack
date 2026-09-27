@@ -2,15 +2,19 @@
 
 ![AI Agents with Python classroom learning path](assets/course-banner.svg)
 
-**[← Project home](README.md) · [Teacher guide](TEACHER_GUIDE.md) · [Student assignment](STUDENT_ASSIGNMENT.md)**
+**[← Theory first](AI_AGENT_THEORY.md) · [Project home](README.md) · [Teacher guide](TEACHER_GUIDE.md) · [Student assignment](STUDENT_ASSIGNMENT.md)**
 
 **Audience:** Bachelor students taking their first AI-agent elective  
 **Prerequisites:** Functions, dictionaries, loops, imports, and basic exceptions  
-**First session:** 90 minutes  
+**Practical session:** 90 minutes, following the 30-minute [theory introduction](AI_AGENT_THEORY.md)  
 **Project:** [AI-Course-Agent-Starter-Pack](README.md)
 
 > [!IMPORTANT]
 > **The central learning objective:** Students can explain how a model requests a tool, how Python executes it, and how the returned result affects the next model response.
+
+## Before this walkthrough
+
+Teach [AI Agent Foundations](AI_AGENT_THEORY.md) first: what agents are, how the observation–decision–action cycle works, and how it maps to this case study. This page then develops the Python implementation. The full sequence is 30 minutes of theory plus 90 minutes of practical work; it may be split across two sessions.
 
 ## Contents
 

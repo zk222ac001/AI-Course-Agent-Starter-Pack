@@ -7,9 +7,23 @@
 > [!TIP]
 > Project the [classroom walkthrough](CLASSROOM_WALKTHROUGH.md) during the lesson for colour-coded architecture, code explanations, and diagrams. Use this page as your teaching checklist.
 
-**Duration:** 90 minutes  
+**Duration:** 30-minute theory introduction + 90-minute practical lesson (120 minutes total; optionally split across two sessions)  
 **Prerequisites:** functions, dictionaries, loops, imports, basic exceptions  
 **Outcome:** explain and modify a tool-using agent.
+
+## Teach the theory first — 30 minutes
+
+Open [AI Agent Foundations — From Theory to Our Course Assistant](AI_AGENT_THEORY.md) before showing code.
+
+| Minutes | Explain | Check understanding |
+|---|---|---|
+| 0–5 | General agent definition and a robot example | Identify the goal and environment |
+| 5–13 | Observations, decisions, actions, and feedback | Explain how a result affects the next choice |
+| 13–20 | LLM-based agents, workflows, autonomy, and memory | Distinguish the model from its Python controller |
+| 20–27 | Map theory to the course-assistant case study | Locate the tool, context, and stopping rules |
+| 27–30 | Pair discussion and transition | Explain the loop without reading code |
+
+The 90-minute practical schedule below starts after this introduction. Use the [classroom walkthrough](CLASSROOM_WALKTHROUGH.md) for detailed code explanations; the schedule below is a compact alternative with extension work included.
 
 ## Prepare before class
 

@@ -5,7 +5,7 @@
 
 Build a course assistant that looks up lesson information, shows its tool calls, and explains the result. Designed for bachelor students learning Python and AI agents.
 
-**[📖 Classroom walkthrough](CLASSROOM_WALKTHROUGH.md) · [🎓 Teacher guide](TEACHER_GUIDE.md) · [🧪 Student assignment](STUDENT_ASSIGNMENT.md) · [🚀 Quick start](#-quick-start)**
+**[🧠 Start with theory](AI_AGENT_THEORY.md) · [📖 Classroom walkthrough](CLASSROOM_WALKTHROUGH.md) · [🎓 Teacher guide](TEACHER_GUIDE.md) · [🧪 Student assignment](STUDENT_ASSIGNMENT.md) · [🚀 Quick start](#-quick-start)**
 
 > [!TIP]
 > **Start with one question:** “What will we study in week 3?”  
@@ -14,6 +14,13 @@ Build a course assistant that looks up lesson information, shows its tool calls,
 ---
 
 ## 🧭 Your learning path
+
+> [!IMPORTANT]
+> **Start with the concepts:** [AI Agent Foundations — From Theory to Our Course Assistant](AI_AGENT_THEORY.md). Explain goals, environments, observations, actions, feedback, and autonomy before opening the Python code.
+>
+> **Suggested order:** 30-minute theory introduction → 90-minute practical walkthrough → student extension task.
+
+The three practical stages follow the theory lesson:
 
 | 🔵 01 · Python tool | 🟣 02 · Chatbot | 🟢 03 · AI agent |
 |---|---|---|
@@ -101,6 +108,7 @@ The lab is to build a course assistant.
 
 | Resource | Use it for |
 |---|---|
+| [🧠 AI agent foundations](AI_AGENT_THEORY.md) | Start with general theory, then map each concept to our course assistant |
 | [📖 Classroom walkthrough](CLASSROOM_WALKTHROUGH.md) | Projecting the full explanation, diagrams, and Python examples |
 | [🧑‍🏫 Teacher guide](TEACHER_GUIDE.md) | Preparing a 90-minute lesson and live demonstrations |
 | [🧪 Student assignment](STUDENT_ASSIGNMENT.md) | Extending the data, adding a second tool, and recording evaluations |
