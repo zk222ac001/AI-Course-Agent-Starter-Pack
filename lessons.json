@@ -1,0 +1,19 @@
+{
+  "1": {
+    "topic": "Python foundations",
+    "lab": "Functions, lists, and dictionaries"
+  },
+  "2": {
+    "topic": "Language models and prompting",
+    "lab": "Compare vague and specific prompts"
+  },
+  "3": {
+    "topic": "AI agents and Python tools",
+    "lab": "Build a course assistant"
+  },
+  "4": {
+    "topic": "Documents and retrieval",
+    "lab": "Find information in documents"
+  }
+}
+
