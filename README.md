@@ -2,6 +2,10 @@
 
 For bachelor students taking their first elective in AI agents. All timetable data is fictional and editable.
 
+## Classroom walkthrough
+
+Open [Teaching AI Agents with Python — Classroom Walkthrough](CLASSROOM_WALKTHROUGH.md) during class for the full explanation: architecture diagrams, Python examples, tool definitions, the agent loop, a second-tool exercise, and a 90-minute teaching sequence.
+
 ## Start here
 
 1. Install Python 3.11 or newer and [Ollama](https://ollama.com/download).
@@ -33,6 +37,7 @@ On macOS/Linux create the environment with python3 and replace the Windows inter
 | 01_chatbot.py | Model without access to the timetable |
 | 02_course_agent.py | Agent with visible tool requests and results |
 | lessons.json | Editable course data |
+| [CLASSROOM_WALKTHROUGH.md](CLASSROOM_WALKTHROUGH.md) | Detailed explanation to present during class |
 | TEACHER_GUIDE.md | 90-minute lesson and demonstration script |
 | STUDENT_ASSIGNMENT.md | Extension tasks and evaluation |
 | TEACHER_SOLUTION.md | Example second tool |
