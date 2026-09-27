@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="490" viewBox="0 0 1200 490" role="img" aria-labelledby="title desc">
+<title id="title">AI Agents with Python — Classroom Starter Pack</title>
+<desc id="desc">A course banner showing the learning progression from Python functions to a chatbot and a tool-using agent. Learn the loop. Build the tools. Explain the decisions.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1226"/><stop offset="1" stop-color="#202147"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#c4d7ff" stroke-opacity=".05"/></pattern></defs>
+<rect width="1200" height="490" rx="24" fill="url(#bg)"/><rect width="1200" height="490" rx="24" fill="url(#grid)"/>
+<rect x="48" y="42" width="302" height="30" rx="15" fill="#193849"/><text x="66" y="62" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#74ead9">THE CLASSROOM STARTER PACK</text>
+<text x="48" y="145" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#fff">AI Agents</text>
+<text x="48" y="207" font-family="Arial,sans-serif" font-size="56" font-weight="700" fill="#80e6da">with Python</text>
+<text x="50" y="250" font-family="Arial,sans-serif" font-size="20" fill="#c1cee3">Learn the loop. Build the tools. Explain the decisions.</text>
+<g font-family="Arial,sans-serif" font-size="12" font-weight="700"><rect x="50" y="279" width="113" height="32" rx="8" fill="#233451"/><text x="68" y="300" fill="#c9dfff">PYTHON 3.11+</text><rect x="175" y="279" width="106" height="32" rx="8" fill="#293052"/><text x="194" y="300" fill="#d5cbff">OLLAMA</text><rect x="293" y="279" width="138" height="32" rx="8" fill="#243d42"/><text x="311" y="300" fill="#a3eedc">LOCAL MODELS</text></g>
+<g transform="translate(782 55)"><circle cx="142" cy="130" r="116" fill="none" stroke="#7569d5" stroke-opacity=".35"/><circle cx="142" cy="130" r="93" fill="#1c2945" stroke="#42537d"/>
+<path d="M142 38V10M51 130H10M234 130H278M142 222V250" stroke="#6b8ea7" stroke-width="2"/>
+<g fill="#80e6da"><circle cx="142" cy="10" r="6"/><circle cx="10" cy="130" r="6"/></g><g fill="#b1a0ff"><circle cx="278" cy="130" r="6"/><circle cx="142" cy="250" r="6"/></g>
+<rect x="81" y="76" width="122" height="101" rx="23" fill="#111e36" stroke="#80e6da" stroke-width="3"/><path d="M142 76V58" stroke="#80e6da" stroke-width="3"/><circle cx="142" cy="54" r="6" fill="#80e6da"/><rect x="103" y="107" width="16" height="17" rx="6" fill="#80e6da"/><rect x="165" y="107" width="16" height="17" rx="6" fill="#b1a0ff"/><path d="M119 148H166" stroke="#c8d5ed" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g font-family="Arial,sans-serif">
+<rect x="48" y="355" width="348" height="92" rx="14" fill="#152c40" stroke="#30516a"/><text x="68" y="386" font-size="13" fill="#75d7ee" font-weight="700" letter-spacing="2">01 / FOUNDATIONS</text><text x="68" y="421" font-size="23" fill="#fff" font-weight="700">Write a Python tool</text>
+<rect x="426" y="355" width="348" height="92" rx="14" fill="#292746" stroke="#504375"/><text x="446" y="386" font-size="13" fill="#c2b1ff" font-weight="700" letter-spacing="2">02 / LANGUAGE MODELS</text><text x="446" y="421" font-size="23" fill="#fff" font-weight="700">Ask a chatbot</text>
+<rect x="804" y="355" width="348" height="92" rx="14" fill="#163934" stroke="#32645a"/><text x="824" y="386" font-size="13" fill="#80e6bd" font-weight="700" letter-spacing="2">03 / AGENT LOOP</text><text x="824" y="421" font-size="23" fill="#fff" font-weight="700">Connect tools + model</text>
+</g></svg>

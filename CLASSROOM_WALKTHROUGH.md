@@ -1,5 +1,9 @@
 # Teaching AI Agents with Python — Classroom Walkthrough
 
+![AI Agents with Python classroom learning path](assets/course-banner.svg)
+
+**[← Project home](README.md) · [Teacher guide](TEACHER_GUIDE.md) · [Student assignment](STUDENT_ASSIGNMENT.md)**
+
 **Audience:** Bachelor students taking their first AI-agent elective  
 **Prerequisites:** Functions, dictionaries, loops, imports, and basic exceptions  
 **First session:** 90 minutes  
@@ -81,6 +85,10 @@ The result is sent back to the model, which can turn it into a readable answer.
 > The model does not automatically open the JSON file, run the function, or gain access to everything on the computer.
 
 ## 3. Complete project architecture
+
+![Colour-coded agent architecture showing model requests, Python execution, and the feedback loop](assets/agent-architecture.svg)
+
+### Editable flowchart
 
 ```mermaid
 flowchart TD

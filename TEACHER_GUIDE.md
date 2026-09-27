@@ -1,5 +1,12 @@
 # Teacher Guide — First AI Agent Lesson
 
+![AI Agents with Python classroom learning path](assets/course-banner.svg)
+
+**[← Project home](README.md) · [Full classroom walkthrough](CLASSROOM_WALKTHROUGH.md) · [Student assignment](STUDENT_ASSIGNMENT.md)**
+
+> [!TIP]
+> Project the [classroom walkthrough](CLASSROOM_WALKTHROUGH.md) during the lesson for colour-coded architecture, code explanations, and diagrams. Use this page as your teaching checklist.
+
 **Duration:** 90 minutes  
 **Prerequisites:** functions, dictionaries, loops, imports, basic exceptions  
 **Outcome:** explain and modify a tool-using agent.

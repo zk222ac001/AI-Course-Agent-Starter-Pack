@@ -1,17 +1,44 @@
-# AI Agents with Python — Classroom Starter Pack
+![AI Agents with Python — learn the loop, build the tools, explain the decisions](assets/course-banner.svg)
 
-For bachelor students taking their first elective in AI agents. All timetable data is fictional and editable.
+# AI Agents with Python
+### A classroom starter pack for your first tool-using agent
 
-## Classroom walkthrough
+Build a course assistant that looks up lesson information, shows its tool calls, and explains the result. Designed for bachelor students learning Python and AI agents.
 
-Open [Teaching AI Agents with Python — Classroom Walkthrough](CLASSROOM_WALKTHROUGH.md) during class for the full explanation: architecture diagrams, Python examples, tool definitions, the agent loop, a second-tool exercise, and a 90-minute teaching sequence.
+**[📖 Classroom walkthrough](CLASSROOM_WALKTHROUGH.md) · [🎓 Teacher guide](TEACHER_GUIDE.md) · [🧪 Student assignment](STUDENT_ASSIGNMENT.md) · [🚀 Quick start](#-quick-start)**
 
-## Start here
+> [!TIP]
+> **Start with one question:** “What will we study in week 3?”  
+> Run the same question through a Python lookup, a chatbot, and a tool-using agent. Watch what changes.
 
-1. Install Python 3.11 or newer and [Ollama](https://ollama.com/download).
-2. Extract this ZIP and open the extracted folder in VS Code.
-3. Keep Ollama running. Open a terminal in the extracted folder.
-4. On Windows, run:
+---
+
+## 🧭 Your learning path
+
+| 🔵 01 · Python tool | 🟣 02 · Chatbot | 🟢 03 · AI agent |
+|---|---|---|
+| Retrieve a lesson with a function. | Ask a model without course data. | Let the model request the lookup. |
+| **Learn:** arguments, dictionaries, results | **Learn:** prompts, messages, missing context | **Learn:** tool requests, execution, feedback |
+| [Open course_tools.py](course_tools.py) | [Open 01_chatbot.py](01_chatbot.py) | [Open 02_course_agent.py](02_course_agent.py) |
+
+> [!IMPORTANT]
+> **The model requests the action. Python performs the action.**  
+> The model selects an available tool and its arguments. The controller checks the request, runs the function, and returns its result.
+
+## 🧠 See the architecture
+
+![Course agent architecture: messages go to the model, Python executes requested tools, and results return to the conversation](assets/agent-architecture.svg)
+
+**Read the diagram:** blue represents Python orchestration, violet represents the model, teal represents tool execution, and green represents the displayed response. Follow the return arrow to see the next model turn.
+
+The full [classroom walkthrough](CLASSROOM_WALKTHROUGH.md#3-complete-project-architecture) includes an editable Mermaid flowchart, a sequence diagram, and explanations of every component.
+
+## 🚀 Quick start
+
+1. Install **Python 3.11 or newer** and [Ollama](https://ollama.com/download).
+2. Clone this repository, or use **Code → Download ZIP** and extract it.
+3. Open the project folder in VS Code and keep Ollama running.
+4. Open a terminal in the project folder and run:
 
 ~~~powershell
 python -m venv .venv
@@ -19,38 +46,91 @@ python -m venv .venv
 ollama pull llama3.2:3b
 ~~~
 
-Activation is unnecessary with these commands. In VS Code select the .venv interpreter through **Python: Select Interpreter**.
+In VS Code, use **Python: Select Interpreter** to select `.venv\Scripts\python.exe`. Activation is unnecessary when using the explicit interpreter paths above. If `.venv` already exists, skip the first command.
 
-## Run three stages
+### Run one stage at a time
+
+**01 — Ordinary Python**
 
 ~~~powershell
 .\.venv\Scripts\python.exe course_tools.py
+~~~
+
+**02 — A model without the course lookup**
+
+~~~powershell
 .\.venv\Scripts\python.exe 01_chatbot.py
+~~~
+
+**03 — The agent with visible tool calls**
+
+~~~powershell
 .\.venv\Scripts\python.exe 02_course_agent.py
 ~~~
 
-On macOS/Linux create the environment with python3 and replace the Windows interpreter path with ./.venv/bin/python.
+On macOS/Linux, create the environment with `python3 -m venv .venv` and replace the Windows interpreter path with `./.venv/bin/python`.
 
-| File | Purpose |
+> [!NOTE]
+> Local inference uses no paid API credits. Initial downloads require internet access, and speed depends on your computer. Download the model and rehearse before class. All timetable data is fictional and editable.
+
+## 🔎 What a tool call looks like
+
+Illustrative trace, not a captured live run:
+
+~~~text
+You: What will we study in week 3?
+
+[Model turn 1]
+[Tool requested] get_lesson: {'week': 3}
+[Tool result] {"topic": "AI agents and Python tools",
+               "lab": "Build a course assistant"}
+
+[Model turn 2]
+Assistant: In week 3, you study AI agents and Python tools.
+The lab is to build a course assistant.
+~~~
+
+| Look for | What it demonstrates |
 |---|---|
-| course_tools.py | Deterministic lookup without AI |
-| 01_chatbot.py | Model without access to the timetable |
-| 02_course_agent.py | Agent with visible tool requests and results |
-| lessons.json | Editable course data |
-| [CLASSROOM_WALKTHROUGH.md](CLASSROOM_WALKTHROUGH.md) | Detailed explanation to present during class |
-| TEACHER_GUIDE.md | 90-minute lesson and demonstration script |
-| STUDENT_ASSIGNMENT.md | Extension tasks and evaluation |
-| TEACHER_SOLUTION.md | Example second tool |
+| 🟣 Tool requested | The model selected a function and arguments |
+| 🟢 Tool result | Python executed the function and returned data |
+| 🔵 Next model turn | The result was added to the conversation |
+| ✅ Final response | The model used the information to answer |
 
-## Try these questions
+## 🎓 Choose your classroom resource
 
-- What will we study in week 3?
-- Compare weeks 2 and 3.
-- What will we study in week 10?
-- What will we study? (Expected: ask which week.)
-- Explain a Python dictionary. (No course lookup needed.)
+| Resource | Use it for |
+|---|---|
+| [📖 Classroom walkthrough](CLASSROOM_WALKTHROUGH.md) | Projecting the full explanation, diagrams, and Python examples |
+| [🧑‍🏫 Teacher guide](TEACHER_GUIDE.md) | Preparing a 90-minute lesson and live demonstrations |
+| [🧪 Student assignment](STUDENT_ASSIGNMENT.md) | Extending the data, adding a second tool, and recording evaluations |
+| [🔑 Teacher solution](TEACHER_SOLUTION.md) | Reviewing an example second tool after students attempt the task |
 
-Edit lessons.json, save, and ask again. The tool rereads the file on every call; no retraining is required. JSON week keys are strings.
+### Project map
+
+| File | Responsibility |
+|---|---|
+| [course_tools.py](course_tools.py) | Validate input and retrieve course data |
+| [01_chatbot.py](01_chatbot.py) | Demonstrate a model without the timetable |
+| [02_course_agent.py](02_course_agent.py) | Manage tool requests, history, execution, and limits |
+| [lessons.json](lessons.json) | Store the editable fictional timetable |
+| [requirements.txt](requirements.txt) | Declare Python dependencies |
+| [assets/](assets/) | Store the course banner and architecture illustration |
+
+## 🧪 Try these questions
+
+| Prompt | Watch for |
+|---|---|
+| What will we study in week 3? | A lookup for week 3 |
+| Compare weeks 2 and 3. | Both weeks retrieved |
+| What will we study in week 10? | An honest missing-information response |
+| What will we study? | A clarification question |
+| Explain a Python dictionary. | No course lookup needed |
+
+> [!TIP]
+> **A simple live experiment:** edit week 3 in `lessons.json`, save, and ask again. The tool rereads the file on every call. No model retraining is involved. JSON week keys are strings.
+
+---
 
 ## Troubleshooting
 

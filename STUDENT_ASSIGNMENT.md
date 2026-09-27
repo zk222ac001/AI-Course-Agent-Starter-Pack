@@ -1,17 +1,22 @@
 # Assignment — Extend the Course Assistant
 
+**[← Project home](README.md) · [Architecture and explanations](CLASSROOM_WALKTHROUGH.md)**
+
+> [!IMPORTANT]
+> **Your challenge:** extend the course assistant and show evidence of how it uses tools. Explain the model’s request, Python’s action, and the result.
+
 **Time:** 30–45 minutes in pairs  
 **Goal:** modify tools and explain evidence from an agent run.
 
-## A. Understand the baseline
+## 🔵 A. Understand the baseline
 
 Run the direct lookup and agent. Ask about week 3. Identify user input, tool name, arguments, result, and final answer.
 
-## B. Extend the data
+## 🟣 B. Extend the data
 
 Add weeks 5 and 6 to lessons.json, each with a topic and lab. Save and ask about both. Explain why retraining is unnecessary.
 
-## C. Add a tool
+## 🟢 C. Add a tool
 
 Create get_assignment(week: int) -> str with fictional assignments for weeks 3 and 4. Include a docstring, validate the week, and return an explicit message for unavailable data.
 
@@ -19,7 +24,7 @@ Import and register the function in AVAILABLE_TOOLS. The agent derives its tools
 
 Ask: “What is the lesson and assignment for week 3?”
 
-## D. Evaluate actual behavior
+## 🟠 D. Evaluate actual behavior
 
 | Input | Expected behavior | Actual tool calls | Pass/fail |
 |---|---|---|---|
